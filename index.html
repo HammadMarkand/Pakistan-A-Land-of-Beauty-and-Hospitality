@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan: The Hidden Gem of South Asia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1564507004663-b6dfb3e2ede5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .flag-colors {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .flag-color {
+            height: 10px;
+            width: 100px;
+        }
+        
+        .green {
+            background-color: #01411C;
+        }
+        
+        .white {
+            background-color: white;
+        }
+        
+        .moon-star {
+            position: relative;
+            width: 100px;
+            height: 10px;
+        }
+        
+        .moon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            top: -10px;
+            left: 10px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.7);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #01411C;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #01411C, #FFFFFF, #01411C);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .visitor-quotes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .quote-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .quote-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .quote-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .quote-text:before {
+            content: '"';
+            font-size: 3rem;
+            color: #01411C;
+            opacity: 0.5;
+            position: absolute;
+            left: -10px;
+            top: -20px;
+        }
+        
+        .visitor-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .visitor-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #01411C;
+        }
+        
+        .visitor-name {
+            font-weight: bold;
+            color: #01411C;
+        }
+        
+        .visitor-country {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .provinces {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .province-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background: white;
+        }
+        
+        .province-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .province-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .province-content {
+            padding: 20px;
+        }
+        
+        .province-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #01411C;
+        }
+        
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .highlight-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .highlight-card:nth-child(1) {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+        }
+        
+        .highlight-card:nth-child(2) {
+            background: linear-gradient(to right, #0c7b93, #00a8cc);
+        }
+        
+        .highlight-card:nth-child(3) {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+        
+        .highlight-card:nth-child(4) {
+            background: linear-gradient(to right, #f46b45, #eea849);
+        }
+        
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .trending-list {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .trending-item {
+            display: flex;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .trending-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .trending-icon {
+            font-size: 2rem;
+            color: #01411C;
+            margin-right: 20px;
+            min-width: 60px;
+        }
+        
+        .trending-content h3 {
+            color: #01411C;
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                        url('https://images.unsplash.com/photo-1564507004663-b6dfb3e2ede5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #01411C;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid #01411C;
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: white;
+        }
+        
+        footer {
+            background-color: #01411C;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .social-icons {
+            margin: 20px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #ccc;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .visitor-quotes, .provinces, .highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Discover Pakistan</h1>
+            <p class="tagline">Where nature meets hospitality, and adventure awaits at every turn</p>
+            <div class="flag-colors">
+                <div class="flag-color green"></div>
+                <div class="flag-color white">
+                    <div class="moon-star">
+                        <div class="moon"></div>
+                    </div>
+                </div>
+                <div class="flag-color green"></div>
+            </div>
+            <p>A land of breathtaking landscapes, rich cultural heritage, and the warmest people you'll ever meet</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Visitor Experiences Section -->
+        <section id="visitor-experiences">
+            <h2>Visitor Experiences</h2>
+            <div class="visitor-quotes">
+                <div class="quote-card">
+                    <p class="quote-text">I was blown away by the beauty of Pakistan. From the mighty Himalayas to the bustling bazaars, every moment was magical. The hospitality was beyond anything I've experienced.</p>
+                    <div class="visitor-info">
+                        <div class="visitor-avatar">SL</div>
+                        <div>
+                            <div class="visitor-name">Sarah Johnson</div>
+                            <div class="visitor-country">United Kingdom</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quote-card">
+                    <p class="quote-text">Pakistan completely shattered my preconceptions. The food, the landscapes, the history - everything exceeded my expectations. I can't wait to return!</p>
+                    <div class="visitor-info">
+                        <div class="visitor-avatar">MR</div>
+                        <div>
+                            <div class="visitor-name">Michael Rodriguez</div>
+                            <div class="visitor-country">United States</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quote-card">
+                    <p class="quote-text">The diversity in Pakistan is incredible. One day you're in a desert, the next in lush green valleys, and then surrounded by some of the world's highest peaks. A true hidden gem!</p>
+                    <div class="visitor-info">
+                        <div class="visitor-avatar">AE</div>
+                        <div>
+                            <div class="visitor-name">Aisha El-Masri</div>
+                            <div class="visitor-country">Egypt</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Provincial Highlights Section -->
+        <section id="provinces">
+            <h2>Explore Our Provinces</h2>
+            <div class="provinces">
+                <div class="province-card">
+                    <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Punjab" class="province-img">
+                    <div class="province-content">
+                        <h3 class="province-name">Punjab</h3>
+                        <p>The heart of Pakistan, known for its fertile lands, historical landmarks like Lahore Fort and Badshahi Mosque, and vibrant culture.</p>
+                    </div>
+                </div>
+                
+                <div class="province-card">
+                    <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sindh" class="province-img">
+                    <div class="province-content">
+                        <h3 class="province-name">Sindh</h3>
+                        <p>Home to the ancient Indus Valley Civilization, bustling Karachi, Sufi shrines, and the stunning Thar Desert.</p>
+                    </div>
+                </div>
+                
+                <div class="province-card">
+                    <img src="https://images.unsplash.com/photo-1564574662336-88c9f5a6c8d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Khyber Pakhtunkhwa" class="province-img">
+                    <div class="province-content">
+                        <h3 class="province-name">Khyber Pakhtunkhwa</h3>
+                        <p>Majestic mountains, lush valleys like Swat, ancient Gandhara civilization sites, and the famous Khyber Pass.</p>
+                    </div>
+                </div>
+                
+                <div class="province-card">
+                    <img src="https://images.unsplash.com/photo-1585506936724-fa0c89362b61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Balochistan" class="province-img">
+                    <div class="province-content">
+                        <h3 class="province-name">Balochistan</h3>
+                        <p>The largest province with stunning coastline along the Arabian Sea, the unique Hingol National Park, and rich mineral resources.</p>
+                    </div>
+                </div>
+                
+                <div class="province-card">
+                    <img src="https://images.unsplash.com/photo-1560185008-a48cd43c1c42?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gilgit-Baltistan" class="province-img">
+                    <div class="province-content">
+                        <h3 class="province-name">Gilgit-Baltistan</h3>
+                        <p>Home to five of the world's 14 highest peaks, including K2, with breathtaking landscapes that attract trekkers worldwide.</p>
+                    </div>
+                </div>
+                
+                <div class="province-card">
+                    <img src="https://images.unsplash.com/photo-1585506936724-fa0c89362b61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Azad Jammu & Kashmir" class="province-img">
+                    <div class="province-content">
+                        <h3 class="province-name">Azad Jammu & Kashmir</h3>
+                        <p>Known as "Heaven on Earth" with its lush green valleys, rivers, and picturesque landscapes like Neelum Valley.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Makes Pakistan Special Section -->
+        <section id="highlights">
+            <h2>What Makes Pakistan Special</h2>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="highlight-title">Majestic Mountains</h3>
+                    <p>Home to 5 of the world's 14 highest peaks, including K2, and some of the most spectacular mountain ranges.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="highlight-title">Ancient History</h3>
+                    <p>From the Indus Valley Civilization to Gandhara art, Pakistan is a treasure trove of archaeological wonders.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="highlight-title">Culinary Delights</h3>
+                    <p>Renowned for flavorful cuisine like biryani, kebabs, karahi, and the world's best mangoes.</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="highlight-title">Warm Hospitality</h3>
+                    <p>Pakistanis are known worldwide for their generous hospitality and welcoming nature towards guests.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending in Pakistan Section -->
+        <section id="trending">
+            <h2>Currently Trending in Pakistan</h2>
+            <div class="trending-list">
+                <div class="trending-item">
+                    <div class="trending-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <div class="trending-content">
+                        <h3>Adventure Tourism Boom</h3>
+                        <p>International travelers are flocking to Pakistan for trekking, mountaineering, and paragliding adventures in the northern regions.</p>
+                    </div>
+                </div>
+                
+                <div class="trending-item">
+                    <div class="trending-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="trending-content">
+                        <h3>Instagram-Worthy Destinations</h3>
+                        <p>Locations like Fairy Meadows, Attabad Lake, and Hunza Valley have become social media sensations for their surreal beauty.</p>
+                    </div>
+                </div>
+                
+                <div class="trending-item">
+                    <div class="trending-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="trending-content">
+                        <h3>Karakoram Highway Road Trips</h3>
+                        <p>Dubbed the "Eighth Wonder of the World," this epic road trip from Islamabad to China is gaining popularity among adventure seekers.</p>
+                    </div>
+                </div>
+                
+                <div class="trending-item">
+                    <div class="trending-icon">
+                        <i class="fas fa-archway"></i>
+                    </div>
+                    <div class="trending-content">
+                        <h3>Cultural & Heritage Tours</h3>
+                        <p>Increased interest in Pakistan's diverse cultural heritage, from Mughal architecture to ancient Buddhist sites in Taxila.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2 class="cta-title">Ready to Experience Pakistan?</h2>
+        <p>Start planning your unforgettable journey to one of the world's most beautiful and hospitable countries.</p>
+        <a href="#plan-your-trip" class="cta-button">Plan Your Trip Today</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Pakistan Welcomes You</h3>
+            <p>Explore the beauty, experience the hospitality, and create memories that will last a lifetime.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2023 Discover Pakistan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for cards when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all cards for animation
+            const cards = document.querySelectorAll('.quote-card, .province-card, .highlight-card, .trending-item');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Add interactivity to province cards
+            const provinceCards = document.querySelectorAll('.province-card');
+            provinceCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const provinceName = this.querySelector('.province-name').textContent;
+                    alert(`Learn more about beautiful ${provinceName}! In a real website, this would link to a detailed page.`);
+                });
+            });
+            
+            // CTA button interaction
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert("Thank you for your interest in Pakistan! In a real website, this would open a trip planning form or guide.");
+            });
+        });
+    </script>
+</body>
+</html>
